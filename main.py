@@ -9,19 +9,7 @@ screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.tracer(0)
-center_line = Turtle()
-center_line.color("white")
-center_line.penup()
-center_line.goto(0,300)
-for i in range(30):
-    if i % 2 ==0:
-        center_line.penup()
-        center_line.forward(10)
-    else:
-        center_line.pendown()
-        center_line.forward(10)
 
-center_line.hideturtle()
 
 ball = Ball()
 scoreboard = ScorBoard()
